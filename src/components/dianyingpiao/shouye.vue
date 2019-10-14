@@ -8,5 +8,6 @@
 <van-button type="info">首页</van-button>
 <van-button type="warning">首页</van-button>
 <van-button type="danger">首页</van-button>
+<van-button type="danger">首页</van-button>
     </div>
 </template>
