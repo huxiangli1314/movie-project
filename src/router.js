@@ -6,11 +6,9 @@ import shouye from "./components/dianyingpiao/shouye.vue"
 import wode from "./components/dianyingpiao/wode.vue"
 import yanchu from "./components/dianyingpiao/yanchu.vue"
 import yingyuan from "./components/dianyingpiao/yingyuan.vue"
-<<<<<<< HEAD
-import yanchu_dibu from "./components/dianyingpiao/yanchu_dibu.vue"
-=======
 
->>>>>>> b3a2d454ec56ff00f1b8b6e350a8cc814755abee
+import yanchu_dibu from "./components/dianyingpiao/yanchu_dibu.vue"
+
 Vue.use(Router)
 export default new Router({
     //http://127.0.0.1:3001/#/Exam02

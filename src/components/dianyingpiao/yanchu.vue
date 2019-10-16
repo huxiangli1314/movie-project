@@ -248,7 +248,7 @@
 
 
 
-
+<dibu></dibu>
 
 
 
@@ -260,6 +260,7 @@
     </div>
 </template>
 <script>
+import dibu from "./yanchu_dibu"
 export default {
     data() {
     return {
@@ -271,6 +272,9 @@ export default {
         { text: '上海', value: 2 }
       ]
     }
+  },
+    components:{
+    dibu,
   }
 }
 </script>
