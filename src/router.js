@@ -6,6 +6,7 @@ import shouye from "./components/dianyingpiao/shouye.vue"
 import wode from "./components/dianyingpiao/wode.vue"
 import yanchu from "./components/dianyingpiao/yanchu.vue"
 import yingyuan from "./components/dianyingpiao/yingyuan.vue"
+<<<<<<< HEAD
 import yanchu_dibu from "./components/dianyingpiao/yanchu_dibu.vue"
 Vue.use(Router)
 export default new Router({
