@@ -4,13 +4,15 @@
         <van-sticky>
         <div id="navbar">
             <van-button color="#db403b">重庆<van-icon name="arrow-down" /></van-button>
-            <van-button color="#db403b" id="c1"  @click="tab1">正在热映</van-button>
-            <van-button color="#db403b"  @click="tab2">即将上映</van-button>
+            <van-button color="#db403b" id="c1"  @click="tab1" text="正在热映"></van-button>
+            <van-button color="#db403b" id="c2" @click="tab2" text="即将上映"></van-button>
             <van-button color="#db403b" style="padding:5px">
                 <van-icon name="search" color="#fff" size="2em" />
             </van-button>
         </div>
         </van-sticky>
+        <!-- 下拉刷新 -->
+        <van-pull-refresh v-model="isLoading" @refresh="onRefresh">
         <!-- 正在热映面板-->
         <dianying1 id="a1"></dianying1>
         <!-- 即将上映面板 开始 -->
@@ -20,6 +22,7 @@
 
        
         <br>  <br>  <br>  <br>  <br>  <br>  <br><br>  <br><br>  <br><br>  <br>
+        </van-pull-refresh>
     </div>
 </template>
 <script>
@@ -28,13 +31,16 @@ import dianying2 from "./dianying2"
 export default {
     data(){
         return{
-          
+          isLoading: false
         }
     },
     methods:{
         tab1(){
             var a1=document.getElementById("a1");
             var a2=document.getElementById("a2");
+            var c1=document.getElementById("c1");
+            var c2=document.getElementById("c2");
+            c1.style="color:#d6221d"
             a1.style="display:block;";
             a2.style="display:none";
 
@@ -42,10 +48,21 @@ export default {
         tab2(){
             var a1=document.getElementById("a1");
             var a2=document.getElementById("a2");
-          a1.style="display:none";
-          a2.style="display:block";
+            var c1=document.getElementById("c1");
+            var c2=document.getElementById("c2");
+            c1.style="color:#db403b";
+            c2.style="color:#d6221d"
+            a1.style="display:none";
+            a2.style="display:block";
 
         },
+        onRefresh() {
+            setTimeout(() => {
+                this.$toast('刷新成功');
+                this.isLoading = false;
+                this.count++;
+            }, 500);
+        }
     },
     components:{
         dianying1,
