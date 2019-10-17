@@ -141,7 +141,7 @@
 
 <div>
 
-<van-tabs v-model="activeName">
+<van-tabs>
   <van-tab title="当前热门" name="renmen">
   
   <div style="width:100%;height:185px;background-color:white;margin-bottom:5px; margin-top:5px;" v-for="(item,index) in 4" :key="index">
@@ -248,7 +248,7 @@
 
 
 
-
+<dibu></dibu>
 
 
 
@@ -260,6 +260,7 @@
     </div>
 </template>
 <script>
+import dibu from "./yanchu_dibu"
 export default {
     data() {
     return {
@@ -271,6 +272,9 @@ export default {
         { text: '上海', value: 2 }
       ]
     }
+  },
+    components:{
+    dibu,
   }
 }
 </script>

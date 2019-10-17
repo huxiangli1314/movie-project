@@ -17,6 +17,11 @@
                 <img src="./img_yingyuan/wtzg.jpg">
             </a>
         </yd-slider-item>
+          <yd-slider-item>
+            <a href="javascript:;">
+                <img src="./img_yingyuan/meituan.jpg">
+            </a>
+        </yd-slider-item>
         <yd-slider-item>
             <a href="javascript:;">
                 <img src="./img_yingyuan/dianying.jpg">
@@ -42,66 +47,63 @@
 </van-dropdown-item>
   <van-dropdown-item v-model="value3" :options="option3" />
   <van-dropdown-item v-model="value4" :options="option4" >
+      <div id="gongneng">
       <p>特色功能</p>
-      <mt-button>全部</mt-button>
+
+      <mt-button  size="small"  plain >全部</mt-button>
+      <mt-button  size="small" plain>可改签</mt-button>
+      <mt-button  size="small" plain >可退票</mt-button>
+      <p>特效厅</p>
+      <mt-button  size="small" plain>全部</mt-button>
+      <mt-button  size="small" plain>lMAX厅</mt-button>
+      <mt-button  size="small" plain >4D厅</mt-button>
+      <mt-button  size="small" plain >儿童厅</mt-button>
+      <mt-button  size="small" plain >巨幕厅</mt-button>
+      </div>
+      <div class="chongzhi">
+    <mt-button size="small" plain>重置</mt-button>
+      <mt-button size="small" type="danger" >完成</mt-button>
+      </div>
    </van-dropdown-item>   
 </van-dropdown-menu>
 
+    <!-- 消息列表 -->
+     <div class="item-list" v-for="item in 4" :key="item">
+        <div class="item-list-title">
+            <p>英皇电影城(新光天地店)</p>
+            <div class="price"><span>30.9</span><span>元</span><span>起</span></div>
+        </div>
+        <div class="item-list-title1">
+            <p>渝北区新牌坊红锦大道99号新光天地6F</p>
+            <span>0.5km</span>
+        </div>
+        <van-button color="#8BBBB0" plain size="mini">改签</van-button>
+        <van-button color="#FD9800"  plain size="mini">小吃</van-button>
+        <van-button color="#FD9800" plain size="mini">折扣卡</van-button>
+        <div class="item-list-title2">
+        <img src="./img_yingyuan/hui.png">
+        <span>中国机长等三部影片特惠</span>
+        </div>
+         <div class="item-list-title2">
+        <img src="./img_yingyuan/ka.png">
+        <span>开卡特惠，首单2张最高立减6元</span>
+        </div>
 
-
-    <!-- 导航栏
-    <mt-navbar v-model="selected">
-  <mt-tab-item id="1">品牌</mt-tab-item>
-  <mt-tab-item id="2">全城</mt-tab-item>
-  <mt-tab-item id="3">距离近</mt-tab-item>
-  <mt-tab-item id="4">筛选</mt-tab-item>
-</mt-navbar>
-
-<mt-tab-container v-model="selected">
-  <mt-tab-container-item id="1">
-      <ul>
-          <li>
-              <a href="javascript:;">全部</a>
-              <span>23</span>
-              </li>
-          <li>
-              <a href="javascript:;">万达影城</a>
-              <span>22</span>
-              </li>
-          <li>
-              <a href="javascript:;">大地影院</a>
-              <span>16</span>
-              </li>
-          <li>
-              <a href="javascript:;">UME国际影城</a>
-              <span>9</span>
-              </li>
-          <li>
-              <a href="javascript:;">保利万和</a>
-              <span>12</span>
-              </li>
-
-      </ul>
-  </mt-tab-container-item>
-  <mt-tab-container-item id="2">
-  </mt-tab-container-item>
-  <mt-tab-container-item id="3">
-  </mt-tab-container-item>
-  <mt-tab-container-item id="4">
-  </mt-tab-container-item>
-</mt-tab-container> -->
-
-
-
+    </div> 
+          
     </div>
 </template>
 
 <script>
+ 
+
+
+
 export default {
     data() {
     return {
+     ddd:"white",
      activeKey: 0,
-
       value1: 0,
       value2:0,
     value3:0,
@@ -125,20 +127,16 @@ export default {
         
       ]
     }
+  },
+  methods:{
+   
+   
   }
-
-    //    data(){
-    //     return {
-    //         selected:"",
-    //     }
-    // },
-    // methods: {
-    //    de(e){
-    //        //事件对象中不能使用this 用e.target代替this
-    //        this.selected=e.target.dataset.id
-    //    }
-    // },
+   
 }
+
+
+
 </script>
 
 <style scoped>
@@ -164,21 +162,61 @@ export default {
         width:100%;
         height:100px;
     }
-    .van-dropdown-item>p{
-        font-size: 22px;
+   p{
+        font-size: 16px;
+        padding:10px;
+        padding-bottom:0;
     }
-    /* .mint-tab-container ul{
-        background:#fff;
-        border-top:1px solid #ccc;
+    #gongneng{
+        padding:10px;
     }
- .mint-tab-container ul>li{
-     padding:10px;
-     color:#666;
-     display: flex;
-     justify-content: space-between;
- }
- */
-
+    .chongzhi{
+        display: flex;
+        justify-content: space-between;
+        padding-left:10px;
+         padding-right:10px;
+          padding-bottom:10px;
+    }
+     .item-list{
+        background-color:#fff;
+        padding:8px;
+        border-bottom: 1px solid #e8e8e8;
+    }
+    .item-list-title,.item-list-title1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .item-list-title>p{
+        font-size: 18px;
+    }
+     .item-list-title>.price>span:first-child{
+         color:rgb(226,73,68);
+         font-size: 16px;
+     }
+     .item-list-title>.price>span:nth-child(2){
+         color:rgb(226,73,68);
+     }
 
     
+     .item-list-title1{
+         color:#585858;
+     } 
+       .item-list-title1>p{
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+     .item-list-title2{
+         display: flex;
+         align-items: center;
+         padding-top:5px;
+          color:#585858;
+     }
+    .quanbu{
+        width:100%;
+        background-color: red !important;
+        
+    }
+   
 </style>
+
