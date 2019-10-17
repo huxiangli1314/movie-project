@@ -47,9 +47,8 @@
 </van-dropdown-item>
   <van-dropdown-item v-model="value3" :options="option3" />
   <van-dropdown-item v-model="value4" :options="option4" >
-      <div class="gongneng">
+      <div id="gongneng">
       <p>特色功能</p>
-
 
       <mt-button  size="small"  plain >全部</mt-button>
       <mt-button  size="small" plain>可改签</mt-button>
@@ -92,17 +91,14 @@
 
     </div> 
           
-
-    
-
-     
-
-
-
     </div>
 </template>
 
 <script>
+ 
+
+
+
 export default {
     data() {
     return {
@@ -133,14 +129,14 @@ export default {
     }
   },
   methods:{
-    //   d1(){
-    //      this.ddd="red";
-    //      console.log(this.ddd)
-    //   }
+   
    
   }
    
 }
+
+
+
 </script>
 
 <style scoped>
@@ -171,7 +167,7 @@ export default {
         padding:10px;
         padding-bottom:0;
     }
-    .gongneng{
+    #gongneng{
         padding:10px;
     }
     .chongzhi{
@@ -219,6 +215,8 @@ export default {
     .quanbu{
         width:100%;
         background-color: red !important;
+        
     }
+   
 </style>
 
