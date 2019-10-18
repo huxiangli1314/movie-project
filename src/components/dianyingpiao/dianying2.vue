@@ -1,19 +1,49 @@
 <template >
     <div>
         <!-- 预告片推荐 -->
-        <div></div>
+        <div>
+             <van-sticky :offset-top="54">
+                <div class="kuai">
+                    <p>
+                        预告片推荐
+                    </p>
+                </div>
+            </van-sticky>
+            <van-swipe :loop="false" :width="300"  >
+                <van-swipe-item v-for="(item,i) in 5" :key="i" ><img class="img1" src="./img_dianying/222.jpg" ></van-swipe-item>
+            </van-swipe>
+        </div>
+        <hr>
         <!-- 近期最受欢迎期待 -->
-        <div></div>
+        <div>
+            <van-sticky :offset-top="54">
+                <div class="kuai">
+                    <p>
+                        近期最受欢迎期待
+                    </p>
+                </div>
+            </van-sticky>
+            <van-swipe :loop="false" :width="150" indicator-color="#fff">
+                <van-swipe-item :width="150"  v-for="(item,i) in 10" :key="i" >
+                    <img class="img1" src="./img_dianying/15.jpg" alt="">
+                    <div style="margin-left:10px">
+                        <p>诛仙</p>
+                        <van-tag plain>11月1日</van-tag>
+                    </div>
+                </van-swipe-item>
+            </van-swipe>
+        </div>
+        <hr>
         <!-- 影片 -->
         <div>
             <!-- 10.18.周五 -->
             <div v-for="(item,i) in 5" :key="i">
                 <van-sticky :offset-top="54">
-                <div class="kuai">
-                    <p>
-                        10月18日 周五
-                    </p>
-                </div>
+                    <div class="kuai">
+                        <p>
+                            10月18日 周五
+                        </p>
+                    </div>
                 </van-sticky>
                 <div id="list" >
                     <van-list>
@@ -69,5 +99,15 @@
     font-size:15px;
     margin-left:15px; 
     line-height:2.5;
+}
+hr{
+    border:none;
+    border-top:10px solid #ccc;
+    height:0;
+    margin-top:10px;
+}
+.img1{
+    width:90%;
+    margin-left:10px;
 }
 </style>
