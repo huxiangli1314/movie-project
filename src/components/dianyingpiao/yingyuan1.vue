@@ -13,7 +13,7 @@
                 <p>渝北区新排放红锦大道99号新光天地6F</p>
             </div>
             <div class="title-right">
-                <van-icon name="arrow" size="16px"/>
+                <img src="./img_yingyuan/xiangyoujiantou.png" alt="">
                 <img src="./img_yingyuan/dingwei.png" alt="">
 
             </div>
@@ -37,5 +37,25 @@
         padding:0;
         margin-left:-13px;
     }
-    
+    .title{
+        background:#fff;
+        padding:10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .title>.title-left p:first-child{
+        font-size: 16px;
+    }
+    .title>.title-left p:last-child{
+        font-size:12px;
+        color:#585858;
+    }
+   .title>.title-right{
+       display: flex;
+       align-items: center;
+   }
+   .title>.title-right img:first-child{
+       margin-right:15px;
+   }
+   
     </style>
