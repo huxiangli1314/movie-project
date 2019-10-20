@@ -27,24 +27,24 @@
 
 <van-grid :border="false" :column-num="5">
   <van-grid-item>
-   <div class="a43">  <img src="./img_yanchu/huatong.png" class="a41" /></div>
+   <div class="a43" @click="xiangqing">  <img src="./img_yanchu/huatong.png" class="a41" /></div>
    <p class="a42">演唱会</p>
   </van-grid-item>
   <van-grid-item>
-   <div class="a44">  <img src="./img_yanchu/huaju.png" class="a41" /></div>
+   <div class="a44"  @click="xiangqing">  <img src="./img_yanchu/huaju.png" class="a41" /></div>
    <p class="a42">话剧歌剧</p>
   </van-grid-item>
   <van-grid-item>
-       <div class="a45">  <img src="./img_yanchu/zhanlan.png" class="a41" /></div>
+       <div class="a45"  @click="xiangqing">  <img src="./img_yanchu/zhanlan.png" class="a41" /></div>
    <p class="a42">休闲展览</p>
   </van-grid-item>
     <van-grid-item>
-        <div class="a43">  <img src="./img_yanchu/qinzi.png" class="a41" /></div>
-  <p class="a42">亲子/艺术</p>
+        <div class="a43"  @click="xiangqing">  <img src="./img_yanchu/qinzi.png" class="a41" /></div>
+  <p class="a42"  @click="xiangqing">亲子/艺术</p>
   </van-grid-item>
     <van-grid-item>
-          <div class="a47">  <img src="./img_yanchu/shanzi1.png" class="a41" /></div>
-  <p class="a42">相声曲艺</p>
+          <div class="a47"  @click="xiangqing">  <img src="./img_yanchu/shanzi1.png" class="a41" /></div>
+  <p class="a42"  @click="xiangqing">相声曲艺</p>
   </van-grid-item>
 </van-grid>
 
@@ -57,24 +57,24 @@
 
 <van-grid :border="false" :column-num="5">
   <van-grid-item>
-   <div>  <img src="./img_yanchu/mingxing2.png" class="a51" /></div>
+   <div  @click="xiangqing">  <img src="./img_yanchu/mingxing2.png" class="a51" /></div>
    <p class="a42">明星来了</p>
   </van-grid-item>
   <van-grid-item>
-   <div>  <img src="./img_yanchu/DJ1.png" class="a51" /></div>
+   <div  @click="xiangqing">  <img src="./img_yanchu/DJ1.png" class="a51" /></div>
    <p class="a42">百大DJ</p>
   </van-grid-item>
   <van-grid-item>
-   <div>  <img src="./img_yanchu/xiju1.png" class="a51" /></div>
+   <div  @click="xiangqing">  <img src="./img_yanchu/xiju1.png" class="a51" /></div>
    <p class="a42">先锋戏剧</p>
   </van-grid-item>
     <van-grid-item>
-    <div>  <img src="./img_yanchu/mahua1.png" class="a51" /></div>
+    <div  @click="xiangqing">  <img src="./img_yanchu/mahua1.png" class="a51" /></div>
   <p class="a42">爆笑喜剧</p>
   </van-grid-item>
     <van-grid-item>
-    <div class="a52">  <img src="./img_yanchu/gengduo.png" class="a41" /></div>
-  <p class="a42">更多精彩</p>
+    <div class="a52"  @click="xiangqing">  <img src="./img_yanchu/gengduo.png" class="a41" /></div>
+  <p class="a42"  @click="xiangqing">更多精彩</p>
   </van-grid-item>
 </van-grid>
 </div>
@@ -144,7 +144,7 @@
 <van-tabs>
   <van-tab title="当前热门" name="renmen">
   
-  <div style="width:100%;height:185px;background-color:white;margin-bottom:5px; margin-top:5px;" v-for="(item,index) in 4" :key="index">
+  <div @click="tiaozhuan1"  style="width:100%;height:185px;background-color:white;margin-bottom:5px; margin-top:5px;" v-for="(item,index) in 4" :key="index">
   <van-row>
   <van-col span="8"><img style="width:100%;height:100%;margin-left:5px;" src="./img_yanchu/haibao1.png" alt=""></van-col>
   <van-col span="16">
@@ -175,7 +175,7 @@
 
 
   <van-tab title="最新上架" name="zuixin">
-    <div style="width:100%;height:185px;background-color:white;margin-bottom:5px; margin-top:5px;" v-for="(item,index) in 4" :key="index">
+    <div  @click="tiaozhuan1" style="width:100%;height:185px;background-color:white;margin-bottom:5px; margin-top:5px;" v-for="(item,index) in 4" :key="index">
   <van-row>
   <van-col span="8"><img style="width:100%;height:100%;margin-left:5px;" src="./img_yanchu/haibao2.png" alt=""></van-col>
   <van-col span="16">
@@ -199,7 +199,7 @@
   <van-tab title="折扣演出" name="zhekou">
   
   
-    <div style="width:100%;height:185px;background-color:white;margin-bottom:5px; margin-top:5px;" v-for="(item,index) in 4" :key="index">
+    <div  @click="tiaozhuan1"  style="width:100%;height:185px;background-color:white;margin-bottom:5px; margin-top:5px;" v-for="(item,index) in 4" :key="index">
   <van-row>
   <van-col span="8"><img style="width:100%;height:100%;margin-left:5px;" src="./img_yanchu/haibao3.png" alt=""></van-col>
   <van-col span="16">
@@ -221,7 +221,7 @@
 
   <van-tab title="全部时间" name="quanbu">
   
-    <div style="width:100%;height:185px;background-color:white;margin-bottom:5px; margin-top:5px;" v-for="(item,index) in 4" :key="index">
+    <div @click="tiaozhuan1"  style="width:100%;height:185px;background-color:white;margin-bottom:5px; margin-top:5px;" v-for="(item,index) in 4" :key="index">
   <van-row>
   <van-col span="8"><img style="width:100%;height:100%;margin-left:5px;" src="./img_yanchu/haibao4.png" alt=""></van-col>
   <van-col span="16">
@@ -271,6 +271,14 @@ export default {
         { text: '北京', value: 1 },
         { text: '上海', value: 2 }
       ]
+    }
+  },
+  methods: {
+    xiangqing(){
+      this.$router.push("/yanchu_liebiao")
+    },
+    tiaozhuan1(){
+      this.$router.push("/yanchu_xiangqing")
     }
   },
     components:{
