@@ -68,7 +68,7 @@
 </van-dropdown-menu>
 
     <!-- 消息列表 -->
-     <div class="item-list" v-for="item in 4" :key="item">
+     <div @click="tiaozhuan" class="item-list" v-for="item in 4" :key="item">
         <div class="item-list-title">
             <p>英皇电影城(新光天地店)</p>
             <div class="price"><span>30.9</span><span>元</span><span>起</span></div>
@@ -129,10 +129,11 @@ export default {
     }
   },
   methods:{
+   tiaozhuan(){
+        this.$router.replace('/yingyuan1')
+   }
    
-   
-  }
-   
+  },
 }
 
 
