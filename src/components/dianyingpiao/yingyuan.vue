@@ -4,7 +4,6 @@
        <div class="top_bar">
            <a href="javascript:;">重庆<van-icon name="arrow-down" /></a>
            <span class="text">影院</span>
-         <!-- <img src="./img_yingyuan/sousuo.png" > -->
          <van-icon name="search" size="24px" />
        </div>
 
@@ -90,7 +89,6 @@
         </div>
 
     </div> 
-          
     </div>
 </template>
 
