@@ -148,16 +148,25 @@
         padding:10px;
         display: flex;
         justify-content: space-between;
+<<<<<<< HEAD
         padding-bottom: 3px;
     }
     .title>.title-left p:first-child{
         font-size: 16px;
          font-weight: bold;
+=======
+    }
+    .title>.title-left p:first-child{
+        font-size: 16px;
+>>>>>>> aef33d40516f032cc206bfd850e8292643fa5c21
     }
     .title>.title-left p:last-child{
         font-size:12px;
         color:#585858;
+<<<<<<< HEAD
         padding-top:2px;
+=======
+>>>>>>> aef33d40516f032cc206bfd850e8292643fa5c21
     }
    .title>.title-right{
        display: flex;
@@ -166,6 +175,7 @@
    .title>.title-right img:first-child{
        margin-right:15px;
    }
+<<<<<<< HEAD
    /* 按钮样式 */
    .btn{
        display: flex;
@@ -350,4 +360,7 @@
    width:104px;
    height:16px;
 }
+=======
+   
+>>>>>>> aef33d40516f032cc206bfd850e8292643fa5c21
     </style>
