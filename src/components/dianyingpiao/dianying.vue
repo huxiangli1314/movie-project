@@ -40,7 +40,7 @@ export default {
             var a2=document.getElementById("a2");
             var c1=document.getElementById("c1");
             var c2=document.getElementById("c2");
-            c1.style="color:#d6221d"
+            // c1.style="color:#d6221d"
             a1.style="display:block;";
             a2.style="display:none";
 
@@ -50,8 +50,8 @@ export default {
             var a2=document.getElementById("a2");
             var c1=document.getElementById("c1");
             var c2=document.getElementById("c2");
-            c1.style="color:#db403b";
-            c2.style="color:#d6221d"
+            // c1.style="color:#db403b";
+            // c2.style="color:#d6221d"
             a1.style="display:none";
             a2.style="display:block";
 

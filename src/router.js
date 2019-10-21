@@ -11,26 +11,16 @@ import yingyuan1 from "./components/dianyingpiao/yingyuan1.vue"
 
 
 import yanchu_dibu from "./components/dianyingpiao/yanchu_dibu.vue"
+import dianyinga from "./components/dianyingpiao/dianyinga.vue"
+import dianyingb from "./components/dianyingpiao/dianyingb.vue"
+import dianyingc from "./components/dianyingpiao/dianyingc.vue"
 
 Vue.use(Router)
 export default new Router({
-<<<<<<< HEAD
-  //http://127.0.0.1:3001/#/Exam02
-  //path:组件路径 components组件名
-  routes: [
-    {path:'/dianying',component:dianying},
-    {path:'/shouye',component:shouye},
-    {path:'/wode',component:wode},
-    {path:'/wode_login',component:wode_login},
-    {path:'/yanchu',component:yanchu},
-    {path:'/yingyuan',component:yingyuan},
-    {path:'/',component:HelloContainer},
-  ]
-})
-=======
-    //http://127.0.0.1:3001/#/Exam02
-    //path:组件路径 components组件名
     routes: [
+        {path:'/dianyingc',component:dianyingc},
+        {path:'/dianyingb',component:dianyingb},
+        {path:'/dianyinga',component:dianyinga},
         { path: '/yingyuan1', component: yingyuan1 },
         { path: '/dianying', component: dianying },
         { path: '/shouye', component: shouye },
@@ -41,4 +31,4 @@ export default new Router({
         { path: '/', component: HelloContainer },
     ]
 })
->>>>>>> 362e17c85b2e64db158e1a4018f23b458cb83654
+
