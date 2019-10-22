@@ -2,7 +2,7 @@
     <div class="container">
          <!-- 顶部栏 -->
        <div class="top_bar">
-           <van-icon name="cross" corlor="#fff" size="24px" />
+           <van-icon name="cross" corlor="#fff" size="24px" @click="yingyuan"/>
             <van-cell-group>
                  <van-field 
                     value="输入城市名或拼音"
@@ -38,6 +38,33 @@
                <van-button type="default" size="small" >武汉</van-button>
                </div>
            </div>
+           <div class="list4">
+               <mt-index-list>
+                    <mt-index-section index="A">
+                    <mt-cell title="阿坝"></mt-cell>
+                    <mt-cell title="阿城区 "></mt-cell>
+                    <mt-cell title="阿客区"></mt-cell>
+                </mt-index-section>
+                  <mt-index-section index="B">
+                    <mt-cell title="白城"></mt-cell>
+                    <mt-cell title="百色"></mt-cell>
+                    <mt-cell title="白山"></mt-cell>
+                </mt-index-section>
+                <mt-index-section index="C">
+                    <mt-cell title="苍南"></mt-cell>
+                    <mt-cell title="沧州"></mt-cell>
+                    <mt-cell title="长春"></mt-cell>
+                </mt-index-section>
+              
+                <mt-index-section index="D">
+                    <mt-cell title="大理"></mt-cell>
+                    <mt-cell title="大安市"></mt-cell>
+                    <mt-cell title="大连"></mt-cell>
+
+                </mt-index-section>
+                </mt-index-list>
+
+           </div>
        </div>
 
 
@@ -47,7 +74,11 @@
 </template>
 <script>
 export default {
-    
+    methods:{
+        yingyuan(){
+             this.$router.replace('/yingyuan')
+        }
+    }
 }
 </script>
 <style>
@@ -97,6 +128,9 @@ export default {
     .list3>p{
         padding-bottom: 8px;
     }
-    
+    .van-button{
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
 
 </style>
