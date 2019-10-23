@@ -2,9 +2,9 @@
     <div class="container">
         <!-- 顶部栏 -->
        <div class="top_bar">
-           <a href="javascript:;">重庆<van-icon name="arrow-down" /></a>
+
+           <p @click="liebiao">重庆<van-icon name="arrow-down"   /></p>
            <span class="text">影院</span>
-         <!-- <img src="./img_yingyuan/sousuo.png" > -->
          <van-icon name="search" size="24px" />
        </div>
 
@@ -68,7 +68,7 @@
 </van-dropdown-menu>
 
     <!-- 消息列表 -->
-     <div class="item-list" v-for="item in 4" :key="item">
+     <div @click="tiaozhuan" class="item-list" v-for="item in 4" :key="item">
         <div class="item-list-title">
             <p>英皇电影城(新光天地店)</p>
             <div class="price"><span>30.9</span><span>元</span><span>起</span></div>
@@ -90,7 +90,6 @@
         </div>
 
     </div> 
-          
     </div>
 </template>
 
@@ -100,6 +99,7 @@
 
 
 export default {
+    // 数据
     data() {
     return {
      ddd:"white",
@@ -129,10 +129,14 @@ export default {
     }
   },
   methods:{
+   tiaozhuan(){
+        this.$router.replace('/yingyuan1')
+   },
+   liebiao(){
+        this.$router.replace('/yingyuan2')
+   }
    
-   
-  }
-   
+  },
 }
 
 
@@ -150,6 +154,9 @@ export default {
         justify-content: space-between;
         align-items: center;
         padding: 10px;
+    }
+    .container>.top_bar>p{
+        font-size: 15px;
     }
     .container>.top_bar>.text{
         font-size:15px;

@@ -8,8 +8,9 @@ import wode_login from "./components/dianyingpiao/wode_login.vue"
 import yanchu from "./components/dianyingpiao/yanchu.vue"
 import yingyuan from "./components/dianyingpiao/yingyuan.vue"
 import yingyuan1 from "./components/dianyingpiao/yingyuan1.vue"
-
-
+import yingyuan2 from "./components/dianyingpiao/yingyuan2.vue"
+import yanchu_liebiao from "./components/dianyingpiao/yanchu_liebiao.vue"
+import yanchu_xiangqing from "./components/dianyingpiao/yanchu_xiangqing.vue"
 import yanchu_dibu from "./components/dianyingpiao/yanchu_dibu.vue"
 import dianyinga from "./components/dianyingpiao/dianyinga.vue"
 import dianyingb from "./components/dianyingpiao/dianyingb.vue"
