@@ -63,7 +63,7 @@
                                         <div>
                                             <span style="font-size:18px;color:#ff5722">33.2万</span>
                                             <span>人想看</span>
-                                            <span style="margin-left:100px;">
+                                            <span style="margin-left:80px;">
                                                 <van-button size="mini" round type="info">预售</van-button>
                                             </span>
                                         </div>

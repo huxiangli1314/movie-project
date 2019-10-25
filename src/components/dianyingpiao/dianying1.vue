@@ -33,7 +33,7 @@
                                     <div>
                                         <span  @click="t2">猫眼评分</span>
                                         <span  @click="t2" style="font-size:18px;color:#ff5722">9.4</span>
-                                        <span style="margin-left:120px;">
+                                        <span style="margin-left:90px;">
                                             <van-button @click="t3" size="mini" round type="danger">购票</van-button>
                                         </span>
                                     </div>

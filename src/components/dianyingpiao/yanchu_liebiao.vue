@@ -39,9 +39,9 @@
   </van-swipe>
   </div>
 
-<div style="width:100%;height:185px;background-color:white;margin-bottom:5px; margin-top:5px;" v-for="(item,index) in 4" :key="index">
+<div style="width:100%;height:185px;background-color:white;margin-bottom:5px; margin-top:15px;" v-for="(item,index) in 4" :key="index">
   <van-row>
-  <van-col span="8"><img style="width:100%;height:100%;margin-left:5px;" src="./img_yanchu/haibao4.png" alt=""></van-col>
+  <van-col span="8"><img style="width:90%;height:90%;margin-left:5px;" src="./img_yanchu/haibao4.png" alt=""></van-col>
   <van-col span="16">
   <div style="width:92%;height:100%;margin-left:15px;">
   <p style="font-size:17px;font-weight:600;">JJ 林俊杰《圣所2.0》世界巡回演唱会-重庆站 </p>
@@ -66,7 +66,7 @@
     <van-tab name="c" title="话剧歌剧">
         <div style="width:100%;height:185px;background-color:white;margin-bottom:5px; margin-top:5px;" v-for="(item,index) in 4" :key="index">
   <van-row>
-  <van-col span="8"><img style="width:100%;height:100%;margin-left:5px;" src="./img_yanchu/haibao3.png" alt=""></van-col>
+  <van-col span="8"><img style="width:90%;height:90%;margin-left:5px;" src="./img_yanchu/haibao3.png" alt=""></van-col>
   <van-col span="16">
   <div style="width:92%;height:100%;margin-left:15px;">
   <p style="font-size:17px;font-weight:600;">JJ 林俊杰《圣所2.0》世界巡回演唱会-重庆站 </p>

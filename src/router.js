@@ -19,6 +19,8 @@ import dianyingc from "./components/dianyingpiao/dianyingc.vue"
 Vue.use(Router)
 export default new Router({
     routes: [
+        {path:'/yanchu_xiangqing',component:yanchu_xiangqing},
+        {path:'/yanchu_liebiao',component:yanchu_liebiao},
         {path:'/dianyingc',component:dianyingc},
         {path:'/dianyingb',component:dianyingb},
         {path:'/dianyinga',component:dianyinga},
